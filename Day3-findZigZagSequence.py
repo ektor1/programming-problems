@@ -1,7 +1,5 @@
 
 def findZigZagSequence(a, n):
-    """For some reason these changes are not accepted in hackerrank even though I am 
-    within the given limits. However, it still outputs the expected result"""
     a.sort()
     mid = int((n + 1)/2)
     a[mid-1], a[n-1] = a[n-1], a[mid-1] # wrong index assignment when switching the last number for the middle one
