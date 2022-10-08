@@ -1,2 +1,3 @@
 # Programming Problems
-In this repository you will find the solutions of some programming problems from the Hackerrank website
+
+In this repository you will find the solutions of programming problems found in various websites
