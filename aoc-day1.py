@@ -4,16 +4,19 @@
 # each elf's inventory is separated by a line and each block is the calories of the items that an elf has brought 
 # Find how many calories are carried by the elf carrying the most calories
 
-# open file in read mode
-my_file = open("input1.txt", "r")
+def max_calories(my_file):
+    # open file in read mode
+    my_file = open(my_file, "r")
 
-# read the file
-data = my_file.read()
+    # read the file
+    
+    data = my_file.read()
 
-calories = data.split("\n")
-# print(calories)
-
-def max_calories(calories):
+    # split the data for each vertical space
+    calories = data.split("\n")
+    
+    # store each elfs inventory in current. If current is larger than max
+    # set max equal to current   
     max = 0
     current = 0
     for i in calories:
@@ -27,4 +30,4 @@ def max_calories(calories):
 
     return max
 
-print(max_calories(calories))
+
