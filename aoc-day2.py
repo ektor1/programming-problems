@@ -39,6 +39,7 @@ def score(rounds):
     
 # Part 2
 # You need to X: lose, Y: draw, Z: win 
+# Dictionaries will map to the appropriate item score that you would get for the desired result of a round 
 
 item_values_2 = {"A": 1, "B": 2, "C":3}
 item_win = {"A": 2, "B": 3, "C": 1}
