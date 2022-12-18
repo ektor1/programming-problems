@@ -36,4 +36,27 @@ def priorities(items):
 
     return total
 
-print(priorities(items))
+# print(priorities(items))
+
+# Part 2
+# Similar problem but this item we need to find the common character for 
+# every 3 lines
+
+def badges(items):
+    """For every three lines of the input data
+    find the common character in all three - stop - link the letter
+    to priority value and add to total"""
+    total = 0
+
+    for i in range(0, len(items), 3):
+        for j in items[i]:
+            if j in items[i+1] and j in items[i+2]:
+                if j.islower():
+                    total += alph_values[j]
+                else:
+                    total += Alph_values[j]
+                break
+    
+    return total
+
+print(badges(items))
