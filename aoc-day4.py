@@ -75,7 +75,7 @@ print(overlaps_2(new_pairs))
 # OR if the 1st number of the 1st range is larger or equal than the 1st number of the 2nd range
 # Then check if the 2nd number of the 1st range is smaller or equal than the 2nd number of the 2nd range 
 
-# I don't understand why this didn't work 
+# I don't understand why this didn't work - perhaps because not all the sets are in increasing order i.e. (5-1, 4-3) instead of (1-5, 3-4)
 # def overlaps(new_pairs):
 
 #     total_overlaps = 0
