@@ -8,7 +8,8 @@ data_clean = data.split("\n")
 
 new_pairs = [[x.split(",")] for x in data_clean]
 
-# Part 1
+# Part 1 ###############################################
+
 def overlaps(new_pairs):
     """Create arrays for each set, convert them to sets, and check if its a subset of the other
     by using the issubset() function"""
@@ -28,7 +29,32 @@ def overlaps(new_pairs):
     
     return total_overlaps
 
-print(overlaps(new_pairs))
+# print(overlaps(new_pairs))
+
+# Part 2 ###############################################
+
+def overlaps_2(new_pairs):
+
+    total_overlaps = 0
+
+    for i in range(0, len(new_pairs[:-1])):
+        set_1_0 = int(new_pairs[i][0][0].split("-")[0])
+        set_1_1 = int(new_pairs[i][0][0].split("-")[1])
+        set_2_0 = int(new_pairs[i][0][1].split("-")[0])
+        set_2_1 = int(new_pairs[i][0][1].split("-")[1])
+        array_1 = np.array(range(set_1_0, set_1_1+1))
+        array_2 = np.array(range(set_2_0, set_2_1+1))
+
+        for i in array_1:
+            if i in array_2:
+                total_overlaps += 1
+                break
+    return total_overlaps
+
+print(overlaps_2(new_pairs))
+
+
+
 
 ############################################### - NOTES - ###############################################
 
