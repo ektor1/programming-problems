@@ -51,7 +51,7 @@ def vintage_crane(data_clean):
 # Part 2 ###############################################
 
 def eva_unit_05(data_clean):
-    """Same as above - just removed "[::-1]" from line 72"""
+    """Same as above - just removed "[::-1]" from line 35"""
     # Creates keys equal to the number of stacks in the data 
     for i in range(1, len(data_clean[0][1:-1][::4])+1):
         stacks_dict[i] = []
