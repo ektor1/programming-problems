@@ -49,6 +49,7 @@ def overlaps_2(new_pairs):
             if i in array_2:
                 total_overlaps += 1
                 break
+                
     return total_overlaps
 
 print(overlaps_2(new_pairs))
