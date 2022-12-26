@@ -48,7 +48,7 @@ def vintage_crane(data_clean):
 # print(vintage_crane(data_clean))
 # JRVNHHCSJ
 
-# Part 2 ############################################### (in progress)
+# Part 2 ###############################################
 
 def eva_unit_05(data_clean):
     """Same as above - just removed "[::-1]" from line 72"""
